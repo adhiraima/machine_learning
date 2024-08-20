@@ -16,4 +16,5 @@ knn.fit(X_train, y_train)
 y_predict = knn.predict(X_test)
 print(f"Prediction: {y_predict}")
 
-print(f"Test Score: {np.mean(y_predict == y_test)}")
+print(f"Prediction Score: {np.mean(y_predict == y_test)}")
+print(f"Test Score: {knn.score(X_test, y_test)}")
